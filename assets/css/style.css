@@ -754,3 +754,21 @@ input::placeholder, textarea::placeholder {
 .send-btn {
 	justify-content: center;
 }
+
+.section-map {
+	background-image: url('../../media/bg-local.png');
+	background-size: cover;
+	background-position: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.section-map-area {
+	width: 100vw;
+	max-width: 1140px;
+}
+
+.section-map-info {
+	width: 50%;
+	padding: 30px;
+}
