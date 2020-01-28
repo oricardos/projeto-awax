@@ -857,6 +857,7 @@ input::placeholder, textarea::placeholder {
 	align-items: center;
 	flex-direction: column;
 	background-color: #555;
+	border-radius: 8px;
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
