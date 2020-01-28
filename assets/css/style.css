@@ -62,6 +62,10 @@ header {
 	width: 80px; 
 }
 
+.menu-opener {
+	display: none;
+}
+
 .menu {
 	flex: 1;
 	justify-content: flex-end;
@@ -341,6 +345,11 @@ header {
 
 .photo-area:hover  .photoinfo{
 	display: flex;
+}
+
+.btn-photo {
+	justify-content: center;
+	align-items: center;
 }
 
 
@@ -868,10 +877,170 @@ input::placeholder, textarea::placeholder {
 	border-bottom: solid 1px #999;
 	padding-bottom: 10px;
 	width: 280px;
+	color: #fff;
+}
+
+.subscribe-area input:focus {
+	box-shadow: 0;
+	border: 0 none;
+	border-bottom: solid 1px #999; 
+	outline: 0;
 }
 
 .subscribe-area input::placeholder {
 	text-align: center;
 	font-size: 13px;
 	color: #999;
+}
+
+.subscribe-area a {
+	margin-bottom: 5px;
+}
+
+
+
+
+@media (min-width: 450px) and (max-width: 800px) {
+	.logo {
+		margin-left: 75px;
+		margin-top: 15px;
+	}
+/****************************/
+	.menu-opener {
+		display: block;
+		width: 35px;
+		margin-right: 75px;
+		margin-top: 15px;
+	}
+
+	nav {
+		display: none;
+		position: absolute;
+		z-index: 99;
+		background-color: rgba(0,0,0,.9);
+		width: 70vw;
+		height: calc(100vh - 100px);
+		top: 100px;
+		right: 0;
+	}
+
+	.menu ul {
+		flex-direction: column;
+	}
+
+	.menu li a{
+		font-weight: bold;
+		height: 90px;
+		font-size: 27px;
+		margin-left: 50px;
+		border: 0;
+	}
+
+	.menu li.active a {
+		border: 0;
+		color: #B28756;
+	}
+/****************************/
+	.section-aboutus {		
+		padding-left: 30px;
+		padding-right: 30px;
+		text-align: center;
+		flex-direction: column;
+	}
+
+	.about-left {
+		padding: 0;
+		padding-bottom: 30px;
+	}
+/****************************/
+	.section-services {
+		flex-wrap: wrap;
+	}
+
+	.section-service {
+		margin-bottom: 20px;
+		min-width: 50%;
+		border: none;
+	}
+
+	.section-service:first-child {
+		border: none;
+	}
+/****************************/
+	.section-team {
+		max-width: 580px;
+	}
+/****************************/
+	.section-companies {
+		flex-wrap: wrap;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	.section-companies img {
+		width: 70px;
+		height: auto;
+	}
+/****************************/
+	.section-price {
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+
+	.plan-area {
+		margin-bottom: 20px;
+		min-width: 50%;
+	}
+/****************************/
+	.section-premium {
+		flex-direction: column;
+	}
+
+	.premium-img {
+		margin-bottom: 80px;
+	}
+/****************************/
+	.section-facts-area {
+		flex-wrap: wrap;
+	}
+
+	.section-facts {
+		margin-bottom: 20px;
+		min-width: 50%;
+	}
+/****************************/
+	.section-map {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	.section-map-area {
+		width: auto;
+	}
+
+	.section-map-info {
+		width: auto;
+
+	}
+
+	.map-info-items {
+		margin-bottom: 30px;
+	}
+
+	.map-info-items:last-child {
+		margin-bottom: 0;
+	}
+/****************************/
+
+	.section-footer-area {
+		padding: 30px;
+	}
+
+	.social-area {
+		flex-wrap: wrap;
+	}
+
+	.social-area a {
+		margin-bottom: 20px;
+	}
 }
